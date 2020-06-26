@@ -150,12 +150,32 @@ h3 {
   margin-left: 30px;
 }
 .contac {
+  display: inline-flex;
+  align-items: center;
+  min-width: 161px;
+  height: 16px;
+  background-color: blue;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
   color: var(--text-color);
+  cursor: pointer;
+}
+.contac::before {
+  content: "";
+  width: 20px;
+  height: 15px;
+  background-color: red;
+  margin-right: 10px;
+  background-size: contain;
+}
+.mail-contact {
+  background-image: url();
+}
+.tel-contact {
+  background-image: url();
 }
 .contac:hover,
 .contac:focus {
@@ -176,6 +196,30 @@ h3 {
 .info-li {
   display: block;
   width: 270px;
+}
+.info-li::before {
+  content: "";
+  display: block;
+  height: 120px;
+  outline: 1px solid tomato;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url();
+}
+.icon-clock {
+  background-image: url();
+}
+.icon-diagram {
+  background-image: url();
+}
+.icon-austronault {
+  background-image: url();
 }
 .info-li + .info-li {
   margin-left: 30px;
