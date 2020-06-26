@@ -210,16 +210,16 @@ h3 {
   background-position: center;
 }
 .icon-antenna::before {
-  background-image: url();
+  background-image: url("../goit-markup-hw-04/img/antenna.svg");
 }
-.icon-clock {
-  background-image: url();
+.icon-clock::before {
+  background-image: url("../goit-markup-hw-04/img/clock1.svg");
 }
-.icon-diagram {
-  background-image: url();
+.icon-diagram::before {
+  background-image: url("../goit-markup-hw-04/img/diagram.svg");
 }
-.icon-austronault {
-  background-image: url();
+.icon-austronault::before {
+  background-image: url("../goit-markup-hw-04/img/astronaut.svg");
 }
 .info-li + .info-li {
   margin-left: 30px;
@@ -253,13 +253,6 @@ h3 {
 .section2 {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.idea {
-  min-width: 270px;
-  border-radius: 4px;
-  padding: 25px 100px;
-  background: #f5f4fa;
-  margin-bottom: 30px;
 }
 .text {
   margin-top: 0;
@@ -311,7 +304,11 @@ h3 {
 .our-people {
   display: block;
   width: 270px;
+  padding-bottom: 24px;
   background-color: var(--footer-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .social-network {
   display: flex;
@@ -322,17 +319,33 @@ h3 {
 }
 .social-name {
   color: #afb1b8;
+  width: 44px;
+  height: 44px;
   display: inline-block;
-  padding: 12px 13px 12px 13px;
+  border-radius: 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.insta {
+  background-image: url("../goit-markup-hw-04/img/instagram.svg");
+}
+.twitter {
+  background-image: url("../goit-markup-hw-04/img/twitter.svg");
+}
+.facebook {
+  background-image: url("../goit-markup-hw-04/img/facebook.svg");
+}
+.linkedin {
+  background-image: url("../goit-markup-hw-04/img/linkedin.svg");
 }
 .social-name:hover,
 .social-name:focus {
-  color: var(--main-color);
+  background-color: var(--main-color);
 }
 .network {
   display: block;
-  width: 44px;
-  height: 44px;
   justify-content: space-between;
 }
 .network + .network {
@@ -366,9 +379,6 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 24px;
-}
-.photo-card {
-  padding-bottom: 24px;
 }
 .photo {
   margin-bottom: 30px;
