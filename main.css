@@ -154,7 +154,6 @@ h3 {
   align-items: center;
   min-width: 161px;
   height: 16px;
-  background-color: blue;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -167,12 +166,8 @@ h3 {
   content: "";
   width: 20px;
   height: 15px;
-  background-color: red;
   margin-right: 10px;
   background-size: contain;
-}
-.mail-contact {
-  background-image: url();
 }
 .tel-contact {
   background-image: url();
