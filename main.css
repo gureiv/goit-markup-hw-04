@@ -150,7 +150,7 @@ h3 {
   margin-left: 30px;
 }
 .contac {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   min-width: 161px;
   height: 16px;
@@ -162,19 +162,13 @@ h3 {
   color: var(--text-color);
   cursor: pointer;
 }
-.contac::before {
-  content: "";
-  width: 20px;
-  height: 15px;
-  margin-right: 10px;
-  background-size: contain;
-}
-.tel-contact {
-  background-image: url();
-}
-.contac:hover,
-.contac:focus {
+.contac:hover {
   color: var(--main-color);
+}
+.icon-eleph,
+.icon-telep {
+  margin-right: 10px;
+  --color3: currentColor;
 }
 .portfolio {
   margin-top: 0;
@@ -188,33 +182,17 @@ h3 {
 .list-portfolio + .list-portfolio {
   margin-left: 8px;
 }
-.info-li {
+.icon-diagram {
   display: block;
   width: 270px;
-}
-.info-li::before {
-  content: "";
-  display: block;
   height: 120px;
-  outline: 1px solid tomato;
   border-radius: 4px;
-  margin-bottom: 30px;
   background: #f5f4fa;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  margin-bottom: 30px;
 }
-.icon-antenna::before {
-  background-image: url("../goit-markup-hw-04/img/antenna.svg");
-}
-.icon-clock::before {
-  background-image: url("../goit-markup-hw-04/img/clock1.svg");
-}
-.icon-diagram::before {
-  background-image: url("../goit-markup-hw-04/img/diagram.svg");
-}
-.icon-austronault::before {
-  background-image: url("../goit-markup-hw-04/img/astronaut.svg");
+.icon-clock {
+  display: inline-block;
+  margin: 25px 100px;
 }
 .info-li + .info-li {
   margin-left: 30px;
@@ -319,25 +297,34 @@ h3 {
   display: inline-block;
   border-radius: 50%;
   background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.insta {
-  background-image: url("../goit-markup-hw-04/img/instagram.svg");
+.icon-twitter {
+  display: inline-block;
+  margin: 12px 12px;
 }
-.twitter {
-  background-image: url("../goit-markup-hw-04/img/twitter.svg");
-}
-.facebook {
-  background-image: url("../goit-markup-hw-04/img/facebook.svg");
-}
-.linkedin {
-  background-image: url("../goit-markup-hw-04/img/linkedin.svg");
-}
-.social-name:hover,
-.social-name:focus {
+.social-name:hover {
   background-color: var(--main-color);
+}
+.social-name2 {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.icon-insta {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  --color4: #afb1b8;
+}
+.social-name2:hover {
+  background-color: var(--main-color);
+}
+.icon-insta:hover {
+  --color4: var(--footer-color);
 }
 .network {
   display: block;
@@ -406,9 +393,28 @@ p {
 .our-clients {
   display: block;
   width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .our-clients + .our-clients {
   margin-left: 30px;
+}
+.clients-logo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.our-clients:hover {
+  border-color: var(--main-color);
+  --color5: var(--main-color);
+}
+.clients-logo1 {
+  --color5: inherit;
 }
 .our-service {
   padding-left: 0;
@@ -422,6 +428,15 @@ p {
   margin-right: 30px;
   margin-bottom: 30px;
   padding-bottom: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.our-photo:hover {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .our-photo:nth-child(3n) {
   margin-right: 0;
